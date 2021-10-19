@@ -1,0 +1,4 @@
+<p><h1> <%= @article.title %> </h1><h3><%= link_to "editar", ediarticle_path(@article) %><%= link_to "borrar", article_path(@article), method: :delete, data: {confirm: "estas seguro"} %></h3></p>
+<p> <%= @article.content %> </p>
+<p><img src="http://lorempixel.com/800/300/city/" alt=""></p>
+<%= link_to "Volver a los articulos", articles_path %>
